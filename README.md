@@ -3,6 +3,10 @@
 ## Sobre o projeto
 O projeto utiliza Machine Learning para prever se uma conta vai ter um fraude bancária ou não, sendo que foram utilizados três modelos diferentes de Machine Learning para conseguir a melhor versão. Foram utilizados os algoritmos RadomForest, SVM e KNE da biblioreca Scikit-Learn.
 
+Caso queira explorar outros projetos, acesse meu portfólio pessoal, que contém todos os meus projetos: 
+
+https://pedrocobalquini.framer.website/
+
 ## Etapas do projeto
 1 - Limpeza do dataset
 
