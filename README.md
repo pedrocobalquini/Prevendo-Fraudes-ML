@@ -1,11 +1,9 @@
 # Prevendo Fraudes
 
 ## Sobre o projeto
-
 O projeto utiliza Machine Learning para prever se uma conta vai ter um fraude bancária ou não, sendo que foram utilizados três modelos diferentes de Machine Learning para conseguir a melhor versão. Foram utilizados os algoritmos RadomForest, SVM e KNE da biblioreca Scikit-Learn.
 
 ## Etapas do projeto
-
 1 - Limpeza do dataset
 
 2 - Engenharia de atributos
@@ -16,38 +14,20 @@ O projeto utiliza Machine Learning para prever se uma conta vai ter um fraude ba
 
 5 - Comparações entre os resultados
 
-## Projeto
+## Tecnologias e bibliotecas utilizadas
+- Python
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- scikit-learn
+- imblearn
 
-### 1 - Limpeza do dataset
+## Melhorias
+No geral toda a parte de limpeza, engenharia e visualização dos dados esta boa, porém para os modelos de Machine Learning é possível fazer algumas melhorias, como utilizar métricas diferentes para avaliar o ajuste geral do modelo ou até utilizar modelos diferentes.
 
-Nesta primeira etapa foram visualizados os dados para ter uma noção dos valores de cada variável, sabendo quais poderiam ter valores nulos, sendo que aqui, a variável 'QT_Dias_Atraso' tinha muitos valores nulos e eles foram substituídos com a mediana da mesma variável.
-
-A engenharia de atributos ocorreu na primeira etapa também principalmente nas variáveis 'Idade', 'Faixa salarial', 'Quantidade de dias em atraso', 'Faixa prazo emprestimo' e 'Faixa prazo restante' em que foram agrupadas em certos valores para facilitar o modelo futuramente.
-
-### 2 - Novo dataset 
-
-Nesta etapa foi criado um novo conjunto de dados com as colunas mais relevantes para o modelo, sendo que foram retiradas as variáveis sem relevância, como 'Contrato' e 'Data_Contratação'.
-
-### 3 - Visualização dos dados
-
-Primeiramente foram os dados categóricos do conjunto de dados em comparação com a variável alvo. Em sequência foram os dados numéricos para visualizar possíveis outliers.
-
-Após tudo isso foi realizado o OneHotEncoder em todas variáveis do tipo 'object' e 'category' e foi realizado o balanceamento da variável alvo e a separação dela com as demais do conjunto de dados.
-
-### 4 - Modelos de machine learning
-#### 4.1 - RadomForest
-
-O primeiro dos três modelos utilizados no projeto, em que coloquei diferentes parâmetros para teste. Como resultado, ele teve uma acurácia de 99.30% em treinamento, com 324 treinos realizados e exibindo os melhores hiperparâmetros.
-
-#### 4.2 - SVM
-
-O segundo dos três modelos utilizados no projeto, em que coloquei diferentes parâmetros para teste. Como resultado, ele teve uma acurácia de 99.07% em treinamento, com 1536 treinos realizados e exibindo os melhores hiperparâmetros.
-
-#### 4.3 - KNN
-
-O terceiro e último modelos utilizados no projeto, em que coloquei diferentes parâmetros para teste. Como resultado, ele teve uma acurácia de 97.47% em treinamento, com 120 treinos realizados e exibindo os melhores hiperparâmetros.
-
-### Conclusão
+## Conclusão
+Todos os modelos utilizados nesse projeto foram testados em diferentes hiperparâmetros, sendo que os melhores deram esses resultados.
 <body>
     <table>
         <tr>
